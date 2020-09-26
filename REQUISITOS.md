@@ -91,13 +91,13 @@ La referencia para la instalación en la documentación oficial:
 
 #### Opcional. Interfaz web para gestión de docker containers
 
-Una vez instalado docker engine podríamos lanzar un entorno gráfico de interfaz web para la visualización y gestión básica de los docker container corriendo en el host. Para ello simplemente lanzamos un container basado en la imagen portainer/portainer. Ejecutamos:
+Una vez instalado docker engine podríamos lanzar un entorno gráfico de interfaz web para la visualización y gestión básica de los docker container corriendo en el host. Para ello simplemente lanzamos un container basado en la imagen **portainer/portainer**. Ejecutamos:
 
 `docker volume create portainer_data`
 
 el comando anterior crearía un **volumen para almacenar los datos del container**. A continuación lanzamos el container:
 
-`docker run -d -p 9000:9000 -name portainer -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer`
+`docker run -d -p 9000:9000 --name portainer -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer`
 
 el comando anterior crear un container de **nombre portainer** que ejecuta el entorno de gestión de docker engine basado en interfaz web.
 
