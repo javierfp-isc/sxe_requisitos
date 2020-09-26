@@ -89,6 +89,20 @@ La referencia para la instalación en la documentación oficial:
 
 `newgrp docker`
 
+#### Opcional. Interfaz web para gestión de docker containers
+
+Una vez instalado docker engine podríamos lanzar un entorno gráfico de interfaz web para la visualización y gestión básica de los docker container corriendo en el host. Para ello simplemente lanzamos un container basado en la imagen portainer/portainer. Ejecutamos:
+
+`docker volume create portainer_data`
+
+el comando anterior crearía un **volumen para almacenar los datos del container**. A continuación lanzamos el container:
+
+`docker run -d -p 9000:9000 -name portainer -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer`
+
+el comando anterior crear un container de **nombre portainer** que ejecuta el entorno de gestión de docker engine basado en interfaz web.
+
+para acceder entramos al **puerto 9000 del host a través del navegador web**.
+
 ### Instalación de docker compose
 
 **docker compose** es una herramienta de **despliegue de containers docker**. Se basa en un fichero declarativo en formato YAML (YAML Aint Markup Language) en el que se indica el entorno de despliegue de los container, es decir, en nuestro caso el escenario de la práctica.
