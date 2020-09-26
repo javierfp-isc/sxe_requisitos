@@ -14,17 +14,7 @@ Cada repositorio constará de una serie de escenarios de trabajo, estos escenari
 
 ### Creación del escenario de la práctica
 
-Antes de crear el escenario hay que realizar un cambio en el archivo **docker-compose.yml **dentro del directorio del escenario de la práctica.
-
-En la sección *volumes* de ese archivo sustituís:
-
-**/home/javierfp/odoo** 
-
-por la misma ruta pero en vuestro directorio home, el cual tendrá la forma: /home/SANCLEMENTE/<vuestro_usuario>. Por ejemplo si mi usuario es javierfp, la ruta sería:
-
-**/home/SANCLEMENTE/javierfp**
-
-Una vez realizado el cambio anterior, para crear el escenario de la práctica entramos en el directorio en el que se ubica el **docker-compose.yml** y dentro del mismo ejecutamos desde la terminal el comando:
+Para crear el escenario de la práctica entramos en el directorio en el que se ubica el **docker-compose.yml** y dentro del mismo ejecutamos desde la terminal el comando:
 
 `docker-compose up -d`
 
