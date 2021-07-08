@@ -66,12 +66,6 @@ Si el nombre del container es **odoo_entorno_odoo_1** accederemos a él con:
 
 `docker exec -it odoo_entorno_odoo_1 bash`
 
-#### Acceder mediante ssh
-
-Otra opción sería usar la propia dirección IP del container y acceder por ssh, pues éste servicio está habilitado por defecto en el container. Si la dirección IP es por ejemplo **192.168.199.13**, ejecutaría:
-
-`ssh root@192.168.199.13`
-
 ### Eliminar el escenario
 
 Al terminar la práctica y entregar los resultados podéis eliminar el escenario, aunque es recomendable dejarlo durante un tiempo por si necesitáis repasar. Para eliminar los container del escenario y todos los elementos ejecutamos desde el mismo directorio:
