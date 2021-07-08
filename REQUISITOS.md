@@ -4,25 +4,6 @@
 
 Para poder crear los escenarios de las prácticas y realizar las mismas es necesario ejecutar una serie de pasos previos los cuales se detallan a continuación
 
-### Creación de Access token para gitlab
-
-Es necesario que en vuestro usuario de gitlab.iessanclemente.net creéis un token personal para acceder al api.
-
-Para acceder:
-
-[https://gitlab.iessanclemente.net](https://gitlab.iessanclemente.net)
-
-**Usuario y password la del usuario del dominio**
-
-Un vez dentro váis a la Configuración (Settings) de vuestro usuario (icono de la esquina superior derecha), desde ahí:
-*  Tokens de aceeso (panel de la izquierda)
-*  Indicad el nombre y marcad la casilla "api"
-*  Generar el token con el botón "Crear un token de acceso personal"
-
-![access token](img/token.png "Access token")
-
-**IMPORTANTE**: Una vez se haya generado el token guardadlo en un lugar seguro porque no podréis volver a verlo desde la pantalla
-
 ### Requisitos del sistema
 
 Para poder realizar la práctica necesitamos ejecutar una distribución GNU/Linux. La recomendada es la última distribución stable de Debian, a día de hoy Debian 10 (buster). El sistema puede ser un host físico (recomendado) o una máquina virtual de Virtual Box.
@@ -116,7 +97,26 @@ La referencia de instalación en la documentación oficial:
 
 [Instalación de docker-compose en Debian](https://docs.docker.com/compose/install/#install-compose-on-linux-systems)
 
-### Instalación de Ansible
+### Creación de Access token para gitlab (OPCIONAL)
+
+Es necesario que en vuestro usuario de gitlab.iessanclemente.net creéis un token personal para acceder al api.
+
+Para acceder:
+
+[https://gitlab.iessanclemente.net](https://gitlab.iessanclemente.net)
+
+**Usuario y password la del usuario del dominio**
+
+Un vez dentro váis a la Configuración (Settings) de vuestro usuario (icono de la esquina superior derecha), desde ahí:
+*  Tokens de aceeso (panel de la izquierda)
+*  Indicad el nombre y marcad la casilla "api"
+*  Generar el token con el botón "Crear un token de acceso personal"
+
+![access token](img/token.png "Access token")
+
+**IMPORTANTE**: Una vez se haya generado el token guardadlo en un lugar seguro porque no podréis volver a verlo desde la pantalla
+
+### Instalación de Ansible (OPCIONAL)
 
 **Ansible** es un herramienta de **automatización de infraestructura**. Se basa en lo que se denomina **infraestructure as code**, es decir definir nuestra infraestructura de sistemas de un modo declarativo muy cercano a la escritura de software. Ansible lo necesitaremos para ejecutar los tests en los containers sobre los que vais a trabajar. La instalación de Ansible en Debian es muy fácil, básicamente se reduce a ejecutar:
 
