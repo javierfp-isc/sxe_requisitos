@@ -1,4 +1,4 @@
-# Requisitos para las prácticas de SXE
+# Requisitos para despliegue de infraestructura de prácticas
 
 ## Pasos previos a realizar
 
